@@ -1,0 +1,34 @@
+#include <stdio.h>
+int main(){
+char ch1, ch2;
+printf("Entre com duas letras:\n");
+scanf("%c", &ch1);
+fflush(stdin);
+scanf(" %c", &ch2);
+printf("As letras inseridas foram %c e %c.\n", ch1, ch2);
+return 0;
+}
+
+
+
+
+//EXECUTE NO POWER SHALL !!!
+
+
+
+
+//Você sabe o que aconteceu? Por que não foi possível inserir a segunda letra? Por causa do teclado!
+
+//Ele armazena temporariamente tudo o que digitamos, mas não repassa instantaneamente para o sistema.
+//Podemos digitar alguma letra e apagá-la com a tecla backspace (←), mas quando apertamos a tecla enter,
+//o sistema recebe a letra que digitamos e o enter.
+
+//Esse armazenamento temporário ocorre no chamado buffer do teclado.
+//Como as variáveis do exemplo anterior recebem caracteres, a letra e o enter são armazenados,
+//respectivamente, em ch1 e ch2. Por isso, ocorre esse comportamento inesperado.
+
+//Existem duas formas de evitar que isso aconteça:
+//A primeira é que, quando antes do símbolo de formato de leitura,
+//você pode utilizar a função scanf() com um espaço na string. Isso fará com que sejam ignorados caracteres especiais, como o enter.
+
+//Assim, o código seria alterado para:
