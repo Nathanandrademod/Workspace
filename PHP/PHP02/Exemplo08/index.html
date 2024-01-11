@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <title>Curso de HTML e CSS </title>
+    <meta charset="utf-8">
+    <style>
+        em {
+            color:blueviolet
+        }
+h1{color: rgb(33, 10, 119);}
+        fieldset {
+            border: 2px brown solid;
+            border-radius: 10px;
+            width: 40%;
+
+        }
+    </style>
+        </style>
+    </head>  
+    <body>
+        <form action="processa.php" method="get">
+        <title>Comidas</title>
+        <h1>Escolha o que voçê prefere: <br><br></h1>
+        <fieldset> <title>Doces ou salgados ?</title>
+            
+            <label for="doce">sorvete</label>
+            <input type="radio" id="doce" name="comida" value="1" >
+            <br>
+            <label for="doce">Bolo</label>
+            <input type="radio" id="doce" name="comida" value="2" >
+            <br>
+            <label for="doce">Brigadeiro</label>
+            <input type="radio" id="doce" name="comida" value="3" >
+            <br>
+            <label for="doce">Balas</label>
+            <input type="radio" id="doce" name="comida" value="4" >
+            <br>
+            <label for="doce">Pudim</label>
+            <input type="radio" id="doce" name="comida" value="5" >
+            <br>
+            <label for="salgado">Coxinha</label>
+            <input type="radio" id="salgado" name="comida" value="6" >
+            <br> 
+            <label for="salgado">Pastel</label>
+            <input type="radio" id="salgado" name="comida" value="7" >
+            <br>
+            <label for="salgado">Pizza</label>
+            <input type="radio" id="salgado" name="comida" value="8" >
+            <br>
+            <label for="salgado">Lanches</label>
+            <input type="radio" id="salgado" name="comida" value="9" >
+            <br>
+            <label for="salgado">Batata frita</label>
+            <input type="radio" id="salgado" name="comida" value="10" >
+            <br><br>
+            <input type="submit" value="Enviar" />
+            </fieldset>
+</form>
+    </body>
+
+</html>

@@ -1,0 +1,156 @@
+body {
+  background-image: url('Imagens/89124.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  padding-top: 6px;
+}
+
+.cx-box {
+  border: 1px solid rgb(247, 15, 170);
+  border-radius: 10px;
+  padding: 0px;
+  text-align: left 10px;
+  margin-left: 10px;
+  margin-top: 2px;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.cx-box2 {
+
+  border-radius: 10px;
+  padding: 0px;
+  text-align: left 10px;
+  margin-left: 10px;
+  margin-top: 2px;
+  text-align: center;
+}
+
+.h2o {
+  font-style: italic;
+  color: blueviolet;
+}
+
+.button {
+  background-color: #a660eb;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-out;
+}
+
+.button:hover {
+  background-color: #3e8e41;
+  color: white;
+  transform: scale(1.1);
+}
+
+.button:active {
+  background-color: #1e5011;
+  color: white;
+  transform: scale(0.9);
+}
+
+form {
+  border: 1px solid rgb(57, 17, 214);
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+}
+
+
+.login {
+  background-color: #007bff;
+  text-decoration: none;
+  margin-left: 10px;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.login:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.2);
+}
+
+.login:active {
+  transform: translateY(0px) scale(0.95);
+  box-shadow: none;
+}
+
+.login.loading:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -10px;
+  margin-top: -10px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  border-top-color: transparent;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.cadastro {
+  background-color: #ba30f1;
+  text-decoration: none;
+  margin-left: 10px;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.cadastro:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.2);
+}
+
+.cadastro:active {
+  transform: translateY(0px) scale(0.95);
+  box-shadow: none;
+}
+
+.cadastro.loading:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -10px;
+  margin-top: -10px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  border-top-color: transparent;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+

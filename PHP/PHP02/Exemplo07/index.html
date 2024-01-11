@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <title>Curso de HTML e CSS </title>
+    <meta charset="utf-8">
+    <style>
+        em {
+            color:blueviolet
+        }
+h1{color: rgb(33, 10, 119);}
+        fieldset {
+            border: 2px brown solid;
+            border-radius: 10px;
+            width: 40%;
+
+        }
+    </style>
+        </style>
+    </head>  
+    <body>
+        <form action="processa.php" method="get">
+        <title>Comidas</title>
+        <h1>Escolha o que voçê prefere: <br><br></h1>
+        <fieldset>
+            <label for="doce">Doces</label>
+            <input type="radio" id="doce" name="comida" value="1" >
+            <br>
+            <label for="salgado">Salgado</label>
+            <input type="radio" id="salgado" name="comida" value="2" >
+            <br> <br>
+            <input type="submit" value="Enviar" />
+            </fieldset>
+</form>
+    </body>
+
+</html>
