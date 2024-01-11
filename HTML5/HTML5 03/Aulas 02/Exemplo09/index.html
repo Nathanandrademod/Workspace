@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <title>Curso de HTML e CSS </title>
+    <meta charset="utf-8">
+    </head>  
+    <body>
+    <p><strong>Menu Suspenso e Caixa de Listagem em Formulários</strong></p>
+    <form name="Cadastro" method="get" action="scripte.php">
+      <fieldset>
+        <legend>Selencione as tecnologias desejadas:</legend>
+
+        <select name="tecnologia" id="tecno"  >
+            <optgroup label="Linguagens compiladas">
+                <option value="ADA" >ADA</option>
+                <option value="C" selected>linguagem C </option>
+                <option value="C++">C++</option>
+            </optgroup>
+            <optgroup label="Linguagens de Script">
+                <option value="Java">Java</option>
+                <option value="PHP">PHP</option>
+                <option value="Python">Python</option>
+                <option value="Ruby">Ruby</option>
+            </optgroup>
+        </select>       <br>
+
+      </fieldset>
+
+      <br>
+      <input type="submit" value="Enviar" />
+
+    </body>
+
+</html>
+  
+<!-- "selected" é o valor "padrão" voce pode ou não usa-lo tanto faz 
+    outro exemplos é incluir estes itens na linha "6" multiple size="3" 
+ --> 

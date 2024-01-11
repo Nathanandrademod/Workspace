@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <title>Curso de HTML e CSS </title>
+    <meta charset="utf-8">
+        <style>
+            em {
+                color:blueviolet
+            }
+
+            fieldset {
+                border: 2px brown solid;
+                border-radius: 10px;
+                width: 40%;
+
+            }
+
+
+        </style>
+    </head>  
+    <body>
+    <p><strong>Elementos Fieldset e Legend em Formulários</strong></p>
+    <form name="Cadastro" method="get" action="scripte.php">
+      <fieldset>
+        <legend>titulo</legend>
+      <label for="nome">Nome</label>
+      <input type="text" name="nome" id="nome">
+      <br>
+      <label for="sobrenome">Sobrenome</label>
+      <input type="text" id="sobrenome" name="snome" >
+      <br>
+      <label for="email">Email <em>*</em></label>
+      <input type="email" name="email" id="email" required>
+      <br>
+      
+      
+
+      </fieldset>
+
+    
+      <br>
+      <input type="submit" value="Enviar" />
+
+    </body>
+
+</html>

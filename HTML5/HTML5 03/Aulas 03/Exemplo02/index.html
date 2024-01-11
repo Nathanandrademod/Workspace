@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <title> Curso de HTML e CSS </title>
+    <meta charset="utf-8">
+        <div class="esti">
+            <style>
+                .estilo {
+                    background-color: aqua;
+                }
+            </style>
+        </div>
+    </head>  
+    <body>
+    <p><strong> Controle Datalist Lista de Sugestões em Formulários</strong></p>
+        <form action="Cadastro" method="get" action="script.php">
+         <label for="bebida">Digite a bebida desejada:
+            <input type="text" name="bebida" id="bebida" list="bebidas"><br><br>
+
+            <datalist id="bebidas"
+              <option value="Cerveja">
+                    <option value="Água">
+                        <option value="Vinho tinto">
+                            <option value="Vinho Rose">
+                                <option value="Cerveja">
+                                    <option value="Campari">
+            </datalist>
+
+         </label>
+        
+        <input type="submit" name="envio" value="Enviar" />
+        <p>Solicitar Bebida</p>
+ 
+        </form>
+    </body>
+
+</html>
