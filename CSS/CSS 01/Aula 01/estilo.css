@@ -1,0 +1,15 @@
+ /*Algumas formatação*/
+ p{
+    background-color: blue;
+    color: white;
+}
+
+.negrito{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: aqua;
+    }
+
+.negrito::after{content: "[*]";}
+p::first-letter{font-size: 200%; color: rgb(219, 80, 80);}
+

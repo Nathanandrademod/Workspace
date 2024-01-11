@@ -1,0 +1,27 @@
+@keyframes animacao{
+
+    form {background-color: aqua;
+    border-top-color: violet;
+    border-color: blue;
+    border-top-width: 10px;
+    border: 3px }
+
+    to {background-color: rgb(50, 173, 255);
+    border-color: rgb(230, 219, 255);}
+}
+#botão{
+    color: azure;
+    text-align: center;
+    background-color: rgb(231, 8, 231);
+    border-radius: 100px;
+    border-width: 5px;
+    border-color: rgb(17, 223, 62);
+    margin-top: 20px;
+    margin-left: 200px;
+    animation-name: animacao;
+    animation-duration: 2s;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}

@@ -1,0 +1,59 @@
+/*
+Seletor	Seleção
+
+H1 P
+
+Qualquer elemento P que seja descendente (filho, neto etc.) de um elemento H1.
+
+H1 > P
+
+Qualquer elemento P que seja filho de um elemento H1.
+
+H1 + P
+
+Qualquer elemento P que seja o próximo irmão de um elemento H1 (ou seja, o próximo filho de um mesmo pai).
+
+*/
+
+
+/*
+PROPRIEDADES:
+
+PROPRIEDADE	                          FUNÇÃO
+
+Background.                   Estabiliza o fundo de elementos.
+|                             Para tal há uma série de propriedades,
+|                             além do atalho “Background”, como “background-color”,
+|                             “background-image” etc.
+
+Border.                       Controla as bordas de um elemento,
+|                             sendo possível definir suas cores, espessuras, entre outras propriedades.
+
+Top, Bottom,                  Controlam o posicionamento, relativo ou absoluto,
+Righ e Left.                  dos elementos em relação a outros elementos.
+
+Color.                        Estila a cor do conteúdo textual de um elemento.
+
+Font-family,                  Série de propriedades usada para estilizar o conteúdo textual
+Font-size,                    de um elemento no que diz respeito à fonte,
+Font-weight etc.              como a família de fontes, seu tamanho, peso (mais clara ou mais escura - negrito) etc.
+
+Height.                       Define a altura de um elemento.
+
+List-style,                   Propriedades usadas para estilizar as listas HTML.
+List-style-image etc.
+
+Margin.                       Controla a distância em função da margem de um elemento para outro.
+
+Padding.                      Controla a distância entre as bordas e o conteúdo de um elemento.
+
+Position.                     Define como um elemento deve ser posicionado na página.
+
+Text-...                      Muitas propriedades controlam o comportamento do conteúdo textual de um elemento,
+|                             como alinhamento (justificado, centralizado etc.), aparência (sublinhado etc.) etc.
+
+Width.                        Define a largura de um elemento.
+
+Z-index.                      Define a profundidade de um elemento – usado,
+|                             por exemplo, para sobreposição de elementos.
+*/

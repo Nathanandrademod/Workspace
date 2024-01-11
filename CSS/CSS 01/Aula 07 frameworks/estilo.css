@@ -1,0 +1,25 @@
+header{
+    height: 100PX;
+    background-color: brown;
+}
+aside{
+    height: 450px;
+    float: left;
+    background-color: aqua;
+}
+main{
+    height: 450px;
+    float: left;
+    background-color: blueviolet;
+
+}
+nav{
+    height: 450px;
+    float: left;
+    background-color: aqua;
+}
+footer{
+    height: 100%;
+    float: left;
+    background-color: brown;
+}
