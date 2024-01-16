@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">  
+    <style>
+        #c1{
+            position: absolute; top: 100px; left: 100px;
+            width: 100px; height: 100px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div id="c1">(100,100)</div>
+    x:<input type="text" id="x1">
+    y:<input type="text" id="y1">
+    <button onclick="alterar()">Mudar</button>
+
+    <script>
+        function alterar() {
+            let objc = document.getElementById("c1");
+            let objx = document.getElementById("x1");
+            let objy = document.getElementById("y1");
+            objc.style.left=`${objx.value}px`;
+            objc.style.top=`${objy.value}px`;
+            objc.innerHTML = 
+                `(${objx.value},${objy.value})`
+
+        }
+    </script>
+</body>
+</html>

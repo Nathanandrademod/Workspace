@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="alterar()"> enviar</button>
+    <div id="ci">TESTE</div>
+    <script type="text/javascript">
+        function alterar() {
+            let pessoas = [{idade: 25, nome: "Ana"},
+                           {idade: 43, nome: "carlos"}];
+            let objc = document.getElementById("ci");
+            let texto = "";
+            for (const x of pessoas) {
+                console.log(x);
+                texto += `${x["nome"]} tem ${["idade"]} ano(s) <br/> `;
+            }
+            objc.innerHTML = texto;
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>consultar endereço  via CEP</h1>
+    <label for="">Digite seu CEP: </label>
+    <input type="text" id="cep" maxlength="9" placeholder="00000-000"/>
+    <button onclick="consultarEndereco()">Consultar</button>
+    <div id="resultado">
+        <p>Seu resultado aqui :</p>
+    </div>
+    <script>
+
+    function consultarEndereco() {
+        let cep = document.querySelector("#cep").value;
+        
+        if (cep.length != 9) {
+            alert ('CEP INVALIDO');
+            return;
+        }
+
+        let url = `https://viacep.com.br/ws/${cep}/json/`;
+
+        fetch(url).then(function(response){
+            response.json().then(function(data){
+                console.log(data)
+                mostrarEndereço(data);
+            })
+        });
+
+    }
+    function mostrarEndereço(dados) {
+        let resultado = document.querySelector("#resultado");
+        if (dados.erro) { resultado.innerHTML = 'Não foi possivel localizar o endereço'; 
+        } else {
+        resultado.innerHTML = `<p>Endereço ${dados.logradouro}<p/>
+                               <p>Complemento ${dados.complemento}<p/>
+                               <p>Bairro ${dados.bairro}<p/>`
+                  }             
+    }
+    </script>
+</body>
+</html>

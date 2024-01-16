@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <title>Requisições AJAX com jQuery (Jsonplaceholder - Posts)</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+</head>
+
+<body>
+    <p>
+        <a id="lnk" href="javascript:void(0);">Executar a requisição AJAX</a>
+    </p>
+    <!-- Esse div mostrará o resultado da requisição AJAX -->
+    <div id="resultado"></div>
+    <script type="text/javascript">
+        //Click do link
+        $('#lnk').click(function () {
+            $.ajax({
+                url: "http://localhost/Programa%C3%A7%C3%A3o%20cliente%20Servidor/Ajax%20&%20JQuery/Aulas%2001/Aula%2004/recurso2.json",
+                type: 'get',
+                beforeSend: function () {
+                    //A função beforeSend é chamada antes da requisição ser submetida.
+                    //Dependendo da velocidade do retorno da requisição, a msg abaixo pode não chegar
+                    // a ser exibida
+                    $("#resultado").html("Carregando...");
+                }
+            })
+                .done(function (msg) {
+                    //Em caso de sucesso, mostra na div #resultado o retorno da requisição
+                    var table = "<table border='1'>";
+                    table += '<tr><th>Id</th><th>Email</th><th>Nome</th></tr>';
+                    $.map(msg, function (val, i) { table += '<tr>' + '<td>' + val.id + '</td>' + '<td>' + val.title + '</td>' + '<td>' + val.body + '</td>' + '</tr>'; });
+                    table += "</table>"
+                    $("#resultado").html("");
+                    $("#resultado").append(table);
+                })
+                .fail(function (jqXHR, textStatus, msg) {
+                    //Em caso de fracasso, mostra no console a mensagem de erro retornada
+                    console.log('A requisição falhou e retornou com a seguinte mensagem: ' + msg);
+                });
+        });
+    </script>
+</body>
+
+</html>

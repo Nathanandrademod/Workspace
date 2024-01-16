@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <p id="result"></p>
+  <p id="result2"></p>
+  <script type="text/javascript">
+
+    //Cria um XML no formato de string JS
+    var xmlString = '<?xml version="1.0" encoding="UTF-8" ?>  \
+<correntistas> \
+<conta agencia="0123-4"> <tipo>física</tipo> \
+<nome>José Maria</nome> <numero>000.000-00</numero> \
+</conta> \
+<conta agencia="5678-9"> <tipo>jurídica</tipo> \
+<nome> Matheus Soulza SA</nome> <numero>111.111-11</numero> \
+</conta> \
+</correntistas>';
+
+    //Converte a string acima para um documento XML válido
+    var parser = new DOMParser();
+    var xmlDoc = parser.parseFromString(xmlString, "text/xml");
+
+    //Chamada a função responsável por coletar e exibir dados do XML
+    manipulaXML(xmlDoc);
+
+    function manipulaXML(xml) {
+      document.getElementById("result").innerHTML =
+        xml.getElementsByTagName("nome")[0].childNodes[0].nodeValue;
+
+
+      document.getElementById("result2").innerHTML =
+        xml.getElementsByTagName("nome")[1].childNodes[0].nodeValue;
+
+
+      //PRESTE ATENÇÃO ABAIXO NO EXEMPLO DE COMO É FEITO ABRA O CONSOLE LOG
+
+
+      console.log(xml.getElementsByTagName("nome"));
+      console.log(xml.getElementsByTagName("nome")[1].childNodes[0].nodeValue);
+
+    }
+  </script>
+</body>
+
+</html><!-- 
+ESTAS PODEM SER ALGUMAS DAS Propriedades A SEREM USADAS PRESTE ATENÇÃO 
+
+Propriedades XML DOM
+
+Estas são algumas das propriedades disponíveis cujos nomes são autoexplicativos: 
+
+nodeName
+nodeValue
+parenteNode
+childNodes
+attributes
+
+
+
+/////////////////////////////////
+
+Métodos XML DOM
+
+Em relação aos métodos, estes são alguns dos disponíveis cujos nomes são autoexplicativos: 
+
+getElementsByTagName(name)
+getAttributeNode(node)
+appendChild(node)
+removeChild(node)
+createElement(name)
+createTextNode(value)
+--> 
